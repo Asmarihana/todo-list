@@ -1,0 +1,25 @@
+GET http://localhost:3000/todos/?status=TO%20DO
+
+
+###
+GET http://localhost:3000/todos/?priority=HIGH
+
+###
+GET http://localhost:3000/todos/?priority=HIGH&status=TO%20DO
+
+###
+GET http://localhost:3000/todos/?search_q=HTML
+
+###api2
+GET http://localhost:3000/todos/1/
+
+###api3
+POST http://localhost:3000/todos/
+Content-Type:application/json
+
+{
+  "id": 5,
+  "todo": "Finalize event theme",
+  "priority": "LOW",
+  "status": "TO DO"
+}
