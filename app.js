@@ -140,7 +140,7 @@ app.put("/todos/:todoId/", async (request, response) => {
   const {
     todo = result.todo,
     priority = result.priority,
-    status = priority.status,
+    status = result.priority,
   } = request.body;
 
   const updateTODOQuery = `
