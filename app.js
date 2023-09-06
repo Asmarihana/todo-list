@@ -159,7 +159,7 @@ app.delete("/todos/:todoId/", async (request, response) => {
   const deleteQuery = `
     DELETE 
     FROM todo
-    WHERE ID=${todoId};`;
+    WHERE id=${todoId};`;
   await db.run(deleteQuery);
   response.send("Todo Deleted");
 });
